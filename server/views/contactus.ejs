@@ -1,34 +1,13 @@
 <!- add header view -->
 <%- include partials/header.ejs %>
 <%- include partials/navbar.ejs %>
-<script>// <![CDATA[
-   $(document).ready(function(){
-       var from,to,subject,text;
-       $("#send_email").click(function(){      
-           to=$("#to").val();
-           subject=$("#subject").val();
-           text=$("#content").val();
-           $("#message").text("Sending E-mail...Please wait");
-           $.get("localhost:3000/send",{to:to,subject:subject,text:text},function(data){
-           if(data=="sent")
-           {
-               $("#message").empty().html("
-   
-   Email is been sent at "+to+" . Please check inbox !
-   
-   ");
-           }
-   
-   });
-       });
-   });
-</script>
+
 <div class="bg-3">
 <main class="container ">
 <div class="row">
 <div class="col-lg-12" >
 <h1>Contact US</h1>
-<form class="form-horizontal" role="form" method="get" action="send">
+<form class="form-horizontal" role="form" method="get" action="/">
    <div class="form-group">
       <label for="subject" class="col-sm-2 control-label">Name</label>
       <div class="col-sm-10">
@@ -49,7 +28,7 @@
    </div>
    <div class="form-group">
       <div class="col-sm-10 col-sm-offset-2">
-         <input id="send_email" name="send_email" type="submit" value="send" class="btn btn-primary">
+         <input id="send_email" name="send_email" type="submit" value="send" style="background-color:black;">
       </div>
    </div>
    <div class="form-group">
