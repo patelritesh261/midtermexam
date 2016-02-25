@@ -4,11 +4,11 @@ var router = express.Router();
 router.get('/', function (req, res, next) {
     res.render('index', { title: 'Home' });
 });
-
+/* GET Contact US page. */
 router.get('/contactus', function (req, res, next) {
     res.render('contactus', { title: 'Contact US' });
 });
-
+/* GET people page. */
 router.get('/people', function (req, res, next) {
     res.render('people', { title: 'People Page' });
 });
