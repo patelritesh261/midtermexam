@@ -1,0 +1,24 @@
+{
+  "name": "COMP2068-LAB4",
+  "description": "A Project For COMP2068-LAB4",
+  "main": "",
+  "authors": [
+    "patelritesh261 <patelritesh261@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/patelritesh261/COMP2068-LAB4",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./public/Scripts/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0"
+  }
+}
